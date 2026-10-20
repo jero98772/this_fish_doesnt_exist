@@ -2,6 +2,8 @@
 
 A StyleGAN2 trained on ~80K side-view fish photos, trained on all local GPUs in parallel.
 
+![](https://raw.githubusercontent.com/jero98772/this_fish_doesnt_exist/refs/heads/main/img/3.png)
+
 ## Data
 `prepare_data.py` downloads, cleans (crop to the fish, flat grey background, square, resize) and deduplicates:
 
@@ -10,6 +12,15 @@ A StyleGAN2 trained on ~80K side-view fish photos, trained on all local GPUs in 
 | [imageomics/fish-vista](https://huggingface.co/datasets/imageomics/fish-vista) | ~60K museum photos, 1,900 species | see dataset card |
 | [imageomics/phylo-fish](https://huggingface.co/datasets/imageomics/phylo-fish) | ~5K | CC0 |
 | [Large-Scale Fish Dataset](https://huggingface.co/datasets/FriedParrot/a-large-scale-fish-dataset) (Ulucan et al. 2020) | ~8K, cut out with their masks | CC-BY-NC-4.0 |
+
+## Model Setup Instructions
+1. Download the Model
+Download the model weights and files from the Hugging Face repository:
+
+       huggingface-cli download jero98772/this_fish_doesnt_exist --local-dir .
+
+2. File Placement
+Place all downloaded model files directly into the root folder of your project directory structure.
 
 ## Run
 ```bash
