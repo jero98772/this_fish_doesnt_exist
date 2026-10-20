@@ -1,0 +1,7 @@
+env/
+data/
+samples/
+generated/
+checkpoint.pt*
+*.log
+__pycache__/
